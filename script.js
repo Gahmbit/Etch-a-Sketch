@@ -10,6 +10,9 @@ function changeGrid(){
         box.remove();
     });
     let newGrid = prompt("Please enter your new desired grid width (MAX: 100): ");
+    if (newGrid > 100){
+        newGrid = 100;
+    }
     generateGrid(newGrid);
     getGridElements();
 }
