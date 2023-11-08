@@ -9,7 +9,17 @@
 <body>
     <div class="body">
         <div class="main">
-            <div class="controls"></div>
+            <div class="controls">
+                <h2>Etch-a-Sketch!</h2>
+                <p>How To Play</p>
+                <div class="buttons">
+                    <button id="grid" onclick="changeGrid()">Grid Size</button>
+                    <button id="reset" onclick="resetGrid()">Reset</button>
+                    <button id="black" onclick="setColor()">Black</button>
+                    <button id="rainbow" onclick="setColor('rainbow')">Rainbow</button>
+                    <button id="eraser" onclick="setColor('white')">Eraser</button>
+                </div>
+            </div>
             <div class="canvas"></div>
         </div>
     </div>
